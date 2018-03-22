@@ -48,6 +48,18 @@ app.get('/', (req, res) => {
 
 });
 
+app.get('/portfolio', (req, res) => {
+  //res.send('<h1>Hello Express!</h1>');
+  res.render('portfolio.hbs', {
+    pageTitle: 'Portfolio Page',
+  });
+
+
+
+});
+
+
+
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
